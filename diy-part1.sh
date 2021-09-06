@@ -12,7 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-sed '8d' target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8071-mf269.dts
+sed -i '8d' target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8071-mf269.dts
 
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
